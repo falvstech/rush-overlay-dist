@@ -1,0 +1,3 @@
+# O instalador é distribuído via GitHub Releases, não commitado no repo.
+*.exe
+*.zip
