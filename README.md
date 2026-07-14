@@ -1,62 +1,119 @@
-# PoE Rush Overlay
+# RUSH Overlay
 
-Programa para auxiliar em **Rush de leveling no Path of Exile 2**. Um painel
-overlay in-game que registra automaticamente os compradores e organiza os
-atendimentos enquanto você joga.
+Overlay in-game para **rush de leveling no Path of Exile 2** — registra os
+compradores automaticamente e organiza os atendimentos enquanto você joga.
+· In-game overlay for **leveling rush services in Path of Exile 2** — it
+auto-registers buyers and organizes your queue while you play.
 
 <p align="center">
   <a href="https://github.com/falvstech/rush-overlay-dist/releases/latest"><img src="https://img.shields.io/github/v/release/falvstech/rush-overlay-dist?label=vers%C3%A3o&color=c8a657" alt="Última versão"></a>
   <a href="https://github.com/falvstech/rush-overlay-dist/releases"><img src="https://img.shields.io/github/downloads/falvstech/rush-overlay-dist/total?label=downloads&color=7bbf6a" alt="Downloads"></a>
-  <img src="https://img.shields.io/badge/plataforma-Windows-2d6fb0" alt="Plataforma Windows">
+  <img src="https://img.shields.io/badge/plataforma-Windows-2d6fb0" alt="Windows">
+  <img src="https://img.shields.io/badge/idiomas-PT--BR%20%7C%20EN-c8a657" alt="PT-BR | EN">
 </p>
 
 <p align="center">
-  <img src="docs/rush.png" alt="Tela de rush do overlay com clientes de exemplo" width="320">
+  <img src="docs/rush.png" alt="RUSH Overlay com clientes de exemplo" width="340">
 </p>
-
-## Download e instalação
 
 <p align="center">
-  <a href="https://github.com/falvstech/rush-overlay-dist/releases/latest"><img src="https://img.shields.io/badge/⬇%20Baixar%20instalador-c8a657?style=for-the-badge&logoColor=black" alt="Baixar instalador"></a>
+  <a href="https://github.com/falvstech/rush-overlay-dist/releases/latest"><img src="https://img.shields.io/badge/⬇%20Baixar%20%2F%20Download-c8a657?style=for-the-badge&logoColor=black" alt="Download"></a>
 </p>
 
-Ou baixe o `RushOverlay-Setup-x.y.z.exe` direto na página de
+<p align="center"><b><a href="#português">🇧🇷 Português</a> · <a href="#english">🇺🇸 English</a></b></p>
+
+---
+
+## Português
+
+Um **único instalador**, com **seleção de idioma (Português / Inglês)** no
+assistente. Você também troca o idioma a qualquer momento na aba **CONFIG**.
+
+### Download e instalação
+
+Baixe o `RushOverlay-Setup-x.y.z.exe` na página de
 **[Releases](https://github.com/falvstech/rush-overlay-dist/releases/latest)**,
-execute e siga o assistente. **Não precisa de Python nem de nada instalado** — o
-app é standalone.
-
-O instalador coloca o app em `Program Files (x86)` e cria atalho na Área de
-Trabalho e no Menu Iniciar.
+execute e siga o assistente (escolha o idioma no início). **Não precisa de nada
+instalado** — o app é standalone. Cria atalho na Área de Trabalho e no Menu
+Iniciar.
 
 > **Requisito:** PoE 2 em modo **Janela** ou **Janela sem borda** (fullscreen
 > exclusivo cobre o overlay).
 
-## O que faz
+### O que faz
 
-- Whisper `Leveling carry (X to Y)` → registra **nome + faixa de level + preço**
-  (pela tabela). Aceita variações (`1 to 70`, `1-70`, `1 a 70`) e cliente EN
-  (`@From`) / BR (`@De`).
-- Até **4 clientes simultâneos** + fila de espera para os próximos.
-- Botão **convidar** copia `/invite Nome` e envia no chat do jogo.
-- Timer por cliente, dropdown de classe e ações de concluir / cancelar /
-  antecipado / pagar / prorrogar.
-- **Comunicação:** sussurra direto pro comprador ou dispara mensagens-modelo.
+- Whisper de `leveling carry / rush (X to Y)` → registra **nome + faixa de level
+  + preço** pela tabela. Aceita variações (`1 to 70`, `1-70`, `1 a 70`) e cliente
+  EN (`@From`) / BR (`@De`).
+- Até **4 clientes simultâneos** + fila de espera.
+- **Aceitar** envia `/invite Nome` no chat do jogo.
+- Cards **compactos de uma linha** (`nome  cur/hi  +ganho  MAP  ✓ ✕`); clique
+  para expandir timer, pagamento, gear, prorrogar e ações.
+- **Prorrogar** com `+1 / +5 / +10` e **tabela de preço por cliente**.
+- **Adicionar cliente manualmente** (nome + faixa de level).
+- **Mensagens:** menu 💬 com mensagens manuais, e gatilhos automáticos
+  (ao aceitar / ao emprestar gear / ao concluir) — enviadas como sussurro.
+- **Só com o PoE aberto:** aparece com o jogo e some quando ele minimiza/fecha.
+- **Opacidade** do painel ajustável.
 
-## Abas
+### Abas
 
-- **RUSH** — clientes ativos.
-- **PREÇOS** — tabela editável faixa → div (recalcula os ativos ao salvar).
-- **CONFIG** — hotkey (padrão `ctrl+d`), caminho do `Client.txt`
-  (auto-detecta Steam/standalone), regex do whisper e opacidade.
+- **SERVICES** — clientes ativos + estatísticas (hoje / 7 dias / total).
+- **MSGS** — mensagens-modelo e seus gatilhos.
+- **PREÇOS** — tabelas editáveis faixa → div (até 3, uma ativa).
+- **CONFIG** — idioma, atalho, opacidade, "só com PoE aberto" e caminho do log.
 
-## Pin / mouseover
+### Problemas comuns
 
-Botão de tachinha no topo alterna entre **fixo** (painel sempre visível) e
-**hover** (colapsa numa barra fina e expande ao passar o mouse).
+- **Atalho não funciona com o jogo em foco** → rode como Administrador (jogo
+  elevado bloqueia hooks de apps não elevados).
+- **"log não encontrado"** → em CONFIG, aponte o `Client.txt`
+  (`.../Path of Exile 2/logs/Client.txt`).
 
-## Problemas comuns
+---
 
-- **Hotkey não funciona com o jogo em foco** → execute como Administrador (o
-  jogo elevado bloqueia hooks de apps não elevados).
-- **"log NÃO encontrado"** → na aba CONFIG, aponte o `Client.txt`
+## English
+
+A **single installer** with **language selection (Portuguese / English)** in the
+wizard. You can also switch language anytime in the **CONFIG** tab.
+
+### Download & install
+
+Grab `RushOverlay-Setup-x.y.z.exe` from the
+**[Releases](https://github.com/falvstech/rush-overlay-dist/releases/latest)**
+page, run it and follow the wizard (pick the language at the start). **Nothing
+else to install** — the app is standalone. It adds Desktop and Start Menu
+shortcuts.
+
+> **Requirement:** PoE 2 in **Windowed** or **Borderless Fullscreen** (exclusive
+> fullscreen covers the overlay).
+
+### What it does
+
+- `leveling carry / rush (X to Y)` whisper → registers **name + level range +
+  price** from the table. Handles variations (`1 to 70`, `1-70`) and EN (`@From`)
+  / PT (`@De`) clients.
+- Up to **4 simultaneous clients** + a waiting queue.
+- **Accept** sends `/invite Name` to the game chat.
+- **Compact one-line cards** (`name  cur/hi  +gained  MAP  ✓ ✕`); click to expand
+  timer, payment, gear, extend and actions.
+- **Extend** with `+1 / +5 / +10` and a **per-client price table**.
+- **Add a client manually** (name + level range).
+- **Messages:** a 💬 menu with manual messages, plus auto-triggers (on accept /
+  on lending gear / on complete) — sent as a whisper.
+- **Only when PoE is open:** shows with the game and hides when it minimizes/closes.
+- Adjustable panel **opacity**.
+
+### Tabs
+
+- **SERVICES** — active clients + stats (today / 7 days / total).
+- **MSGS** — message templates and their triggers.
+- **PRICES** — editable range → div tables (up to 3, one active).
+- **CONFIG** — language, hotkey, opacity, "only when PoE is open" and log path.
+
+### Troubleshooting
+
+- **Hotkey doesn't work while the game is focused** → run as Administrator (an
+  elevated game blocks hooks from non-elevated apps).
+- **"log not found"** → in CONFIG, point to `Client.txt`
   (`.../Path of Exile 2/logs/Client.txt`).
