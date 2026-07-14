@@ -117,3 +117,19 @@ shortcuts.
   elevated game blocks hooks from non-elevated apps).
 - **"log not found"** → in CONFIG, point to `Client.txt`
   (`.../Path of Exile 2/logs/Client.txt`).
+
+---
+
+## Changelog
+
+- **2.0.7** — Campos de texto voltaram a aceitar teclado com o painel aberto:
+  agora dá pra **editar preços, mensagens e fazer inserção manual** (a janela
+  vira focável enquanto o painel de config está aberto). · Text fields accept
+  keyboard again while the panel is open — you can now **edit prices, messages
+  and add clients manually** (the window becomes focusable while the config
+  panel is open).
+- **2.0.6** — Banner automático (sem rush), painel movível e fix de travar ao abrir.
+- **2.0.5** — Banner na tela (nome + level) com preview no config.
+- **2.0.4** — Overlay cresce pra cima e badge de notificação.
+- **2.0.3** — Overlay em tela cheia, arraste livre, painel central.
+- **2.0.2** — Foco do jogo, click-through e rodapé compacto.
