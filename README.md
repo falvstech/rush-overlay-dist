@@ -122,6 +122,14 @@ shortcuts.
 
 ## Changelog
 
+- **2.0.8** — **Inserção manual aceita teclado de verdade** (o form fica no widget,
+  fora do painel, e por isso não recebia tecla nenhuma — corrigido na 2.0.7 só pros
+  campos do painel). · Mensagem na tela do jogo agora aparece **no meio da tela**,
+  maior. · Removido o banner de nome + level (e sua configuração).
+  · **Manual insertion really accepts the keyboard now** (the form lives in the
+  widget, outside the panel, so it got no key events — 2.0.7 only fixed the panel's
+  own fields). · The on-screen game message now shows **in the middle of the
+  screen**, larger. · Removed the name + level banner (and its settings).
 - **2.0.7** — Campos de texto voltaram a aceitar teclado com o painel aberto:
   agora dá pra **editar preços, mensagens e fazer inserção manual** (a janela
   vira focável enquanto o painel de config está aberto). · Text fields accept
