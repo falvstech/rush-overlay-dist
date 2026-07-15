@@ -122,6 +122,20 @@ shortcuts.
 
 ## Changelog
 
+- **2.0.9** — **Envio de chat ~10x mais rápido**: o app não sobe mais um PowerShell
+  novo (que recompilava tudo do zero, ~3s) a cada mensagem — agora é um processo só,
+  reaproveitado, e cada envio leva ~0.3s. Aceitar um cliente com `/invite` +
+  mensagem automática deixou de **travar o jogo por ~10s**. · **A janela do PoE não
+  é mais empurrada/desmaximizada** ao enviar mensagem. · Pequena pausa entre
+  mensagens seguidas pra não bater no anti-flood do chat do jogo. · Mensagem na tela
+  do jogo mais **discreta** (fonte e caixa menores).
+  · **Chat sending is ~10x faster**: the app no longer spawns a fresh PowerShell
+  (recompiling everything from scratch, ~3s) per message — it's a single reused
+  process now, and each send takes ~0.3s. Accepting a client with `/invite` + an
+  auto-message no longer **freezes the game for ~10s**. · **The PoE window is no
+  longer pushed/unmaximized** when sending a message. · Small gap between
+  back-to-back messages to avoid the game chat's anti-flood. · The on-screen game
+  message is now more **discreet** (smaller font and box).
 - **2.0.8** — **Inserção manual aceita teclado de verdade** (o form fica no widget,
   fora do painel, e por isso não recebia tecla nenhuma — corrigido na 2.0.7 só pros
   campos do painel). · Mensagem na tela do jogo agora aparece **no meio da tela**,
