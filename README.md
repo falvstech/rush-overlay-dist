@@ -122,6 +122,20 @@ shortcuts.
 
 ## Changelog
 
+- **2.0.10** — **Correção importante: o app confundia o navegador com o jogo.** Se você
+  tivesse o **PoE2 Trade aberto no Chrome**, o app podia achar que a aba era o jogo (o
+  título dela é "PoE2 Trade - Path of Exile - ..."). Quando isso acontecia, ao enviar uma
+  mensagem ele **trazia o navegador pra frente no meio do rush e colava a mensagem lá
+  dentro** — e o overlay não aparecia. Como o erro dependia da ordem dos programas
+  abertos, ele ia e voltava sozinho. Agora o app identifica o jogo pelo **programa**, não
+  pelo título da janela. **Recomendada pra todo mundo**, principalmente quem usa o Trade.
+  · **Important fix: the app could mistake your browser for the game.** With **PoE2 Trade
+  open in Chrome**, the app could treat that tab as the game (its title reads "PoE2 Trade
+  - Path of Exile - ..."). When it did, sending a message would **bring the browser to
+  the front mid-rush and paste the message into it** — and the overlay wouldn't show.
+  Since it depended on the order of running programs, it came and went on its own. The
+  app now identifies the game by the **program itself**, not the window title.
+  **Recommended for everyone**, especially Trade users.
 - **2.0.9** — **Envio de chat ~10x mais rápido**: o app não sobe mais um PowerShell
   novo (que recompilava tudo do zero, ~3s) a cada mensagem — agora é um processo só,
   reaproveitado, e cada envio leva ~0.3s. Aceitar um cliente com `/invite` +
