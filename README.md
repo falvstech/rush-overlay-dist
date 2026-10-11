@@ -122,6 +122,19 @@ shortcuts.
 
 ## Changelog
 
+- **2.0.11** — **Overlay mais compacto: ocupa bem menos tela.** Cada cliente agora é
+  **uma linha só** (status, nome, nível, tier do mapa, preço em divine e se já pagou),
+  com uma barrinha de progresso fina embaixo. Clique na linha pra ver os detalhes e as
+  ações — os mesmos botões de antes, mais um botão **Convidar / Concluir**. Só um
+  cliente fica aberto por vez, e quem chega ou bate a meta abre sozinho. O rodapé
+  mostra a **fila** (dá pra chamar alguém da fila fora de ordem) e os totais
+  **recebido / a receber** da sessão. · **More compact overlay: takes far less screen
+  space.** Each client is now **a single line** (status, name, level, map tier, divine
+  price and paid status), with a thin progress bar below. Click the line for details
+  and actions — the same buttons as before, plus an **Invite / Complete** button. Only
+  one client is open at a time; new requests and finished rushes open on their own.
+  The footer shows the **queue** (you can pull someone out of order) and the session's
+  **received / to receive** totals.
 - **2.0.10** — **Correção importante: o app confundia o navegador com o jogo.** Se você
   tivesse o **PoE2 Trade aberto no Chrome**, o app podia achar que a aba era o jogo (o
   título dela é "PoE2 Trade - Path of Exile - ..."). Quando isso acontecia, ao enviar uma
